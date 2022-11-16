@@ -1,0 +1,17 @@
+{
+  "name": "cosmos",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "BlockJayn",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "@cosmjs/proto-signing": "^0.29.2",
+    "@cosmjs/stargate": "^0.29.2"
+  }
+}
