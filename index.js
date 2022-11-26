@@ -34,7 +34,6 @@ import {
     coins,
     parseCoins
 } from "@cosmjs/stargate";
-import { stringToPath } from "@cosmjs/crypto";
 
 const rpcEndpoint = "https://rpc.juno.omniflix.co";
 const wallet = await DirectSecp256k1HdWallet.fromMnemonic(
@@ -150,7 +149,7 @@ async function getBalance(address, coin) {
     console.log(balance);
     return balance;
 }
-getBalance(firstAccount.address, "ujuno")
+//getBalance(firstAccount.address, "ujuno")
 
 // Get Staked Balance from Address
 async function getBalanceStaked(address) {
@@ -158,7 +157,7 @@ async function getBalanceStaked(address) {
     console.log(stakedBalance);
     return stakedBalance;
 }
-getBalanceStaked(firstAccount.address)
+//getBalanceStaked(firstAccount.address)
 
 // Get Block Details and Transactions
 async function getBlock(blocknumber) {
@@ -314,6 +313,7 @@ async function delegateTokens(delegatorAddress, validatorAddress, delegateAmount
         console.error("Error Sending Transaction: ", error)
     }
 }
+/*
 delegateTokens(
     firstAccount.address,
     "junovaloper13qjgwewgrwu979wn8xxrh274rjtwk4m5gqkehp",
@@ -321,3 +321,4 @@ delegateTokens(
     { gasAmount: "150000", denom: "ujuno", gasFee: "150000" },
     ""
 )
+*/
